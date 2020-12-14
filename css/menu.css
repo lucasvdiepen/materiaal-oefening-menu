@@ -1,9 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
 /* vloeiend scrollen zie: https://www.w3schools.com/howto/howto_css_smooth_scroll.asp  */
+
+html{
+    scroll-behavior: smooth;
+}
+
 body {
     padding: 0;
     margin: 0;
     background-color: thistle;
+    font-family: 'Montserrat', sans-serif;
     font-size: 26px;
+}
+
+/* Navigatie */
+
+nav{
+    background-color: lightblue;
+}
+
+nav ul{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+nav li{
+    flex: 1 0 250px;
+}
+
+nav li + li{
+    border-left: solid 1px white;
+}
+
+nav a{
+    color: white;
+    text-decoration: none;
+    display: block;
+    text-align: center;
+    padding: 10px;
+}
+
+nav a:hover{
+    background-color: rgb(0, 101, 196);
 }
 
 .header {
@@ -11,8 +52,8 @@ body {
     margin: 0;
     text-align: center;
     font-size: 30px;
-    collor: whitesmoke;
-    background-image: url(../afb/Kerstmenu.jpeg)
+    color: whitesmoke;
+    background-image: url(../afb/Kerstmenu.jpeg);
     background-position: center;
 }
 
@@ -37,6 +78,23 @@ section header {
     background-position: center;
     padding: 30px;
 }
+
+#voor header{
+    background-image: url(../afb/bietentartaar.jpg);
+}
+
+#hoofd header{
+    background-image: url(../afb/pastinaak.jpg);
+}
+
+#bij header{
+    background-image: url(../afb/stoofpeertjes.jpg);
+}
+
+#na header{
+    background-image: url(../afb/bietentartaar.jpg);
+}
+
 h1, h2, h4 {
     color: white;
     text-align: center; 
